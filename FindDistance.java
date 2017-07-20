@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.lang.Math;
 
 public class FindDistance {
     public static void main(String[] args) throws IOException {
@@ -17,7 +18,7 @@ public class FindDistance {
         listOfNumbers.set(firstMinIndex, 666666666);
         int secondMinIndex = findMinIndex(listOfNumbers);
 
-        System.out.println(secondMinIndex - firstMinIndex);
+        System.out.println((int) Math.abs(secondMinIndex - firstMinIndex));
     }
 
     public static int findMinIndex(List<Integer> list) {
